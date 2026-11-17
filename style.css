@@ -9,6 +9,7 @@ html {
   --space-1: 1rem;
   --space-2: 2rem;
   --space-3: 3rem;
+  --section-padding: 100px;
 
   background: var(--color-page);
   color: var(--color-text);
@@ -26,8 +27,10 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
+  color: white;
 }
 
 main {
@@ -170,19 +173,73 @@ main > * {
   }
 }
 
+/* Redigeret / Tilføjet */
 .menu {
   margin: 0;
   padding: var(--space-1);
   list-style: none;
-  background: var(--color-surface);
+  /* background: var(--color-surface); */
   border: 1px solid var(--color-border);
-  @media (width > 600px) {
+  gap: 10px;
+  box-shadow: 1px;
+  border-radius: 10%;
+  background: #ffecc5;
+  position-area: bottom span-left;
+  min-width: anchor-size(1px);
+  transform-origin: top right;
+  transition-duration: 0s;
+  /* @media (width > 600px) {
     display: flex;
     gap: var(--space-1);
     padding: 0;
     border: none;
     background: none;
     position: static;
+  } */
+}
+
+.menu-item {
+  text-decoration: none;
+  display: grid;
+  padding: 2px;
+  border-radius: 10%;
+  color: white;
+}
+
+.menu-item:hover {
+  background: #044529;
+  color: white;
+  padding: 5px;
+  border: solid #d4af37;
+}
+
+.site-nav button {
+  background: #044529;
+  color: white;
+  padding: 5px;
+  border-radius: 10%;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu:popover-open {
+  transition-duration: 0.1s;
+}
+
+@media (width > 600px) {
+  .site-nav button {
+    display: none;
+  }
+  .menu {
+    all: unset;
+    display: flex;
+    gap: 2ch;
+    list-style: none;
+    /* Nulstil først, og byg derefter den vandrette liste */
+  }
+  .menu-item {
+    padding: 0px;
+    color: black;
   }
 }
 
@@ -195,7 +252,8 @@ main > * {
 }
 
 .menu a[aria-current="page"] {
-  border-bottom-color: var(--color-border);
+  border-bottom-color: #d4af37;
+  /* border-bottom-color: var(--color-border); */
 }
 
 /* Flader */

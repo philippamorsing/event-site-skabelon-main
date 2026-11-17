@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .container {
+      width: 400px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="img-container">
+        <!-- <img src="assets/male_keramik.png" alt="Male keramik" /> -->
+        <img src="assets/sloejfe.png" alt="Sløjfe" />
+      </div>
+      <button class="btn-keramik" popovertarget="keramik">Læs mere</button>
+    </div>
+
+    <div class="container">
+      <div class="img-container">
+        <img src="assets/sloejfe.png" alt="Sløjfe" />
+      </div>
+      <button class="btn-klip" popovertarget="klip">Læs mere</button>
+    </div>
+
+    <div id="keramik" popover>
+      <img src="assets/male_keramik.png" alt="Male keramik" />
+      <div>
+        <h3>Mal lys & keramik</h3>
+        <button class="btn-keramik" popovertarget="keramik">Luk</button>
+      </div>
+    </div>
+
+    <div id="klip" popover>
+      <img src="assets/klippe, klistre.png" alt="Klippe/klistre" />
+      <div>
+        <h3>Klippe/klistre</h3>
+        <button class="btn-klip" popovertarget="klip">Luk</button>
+      </div>
+    </div>
+  </body>
+</html>
