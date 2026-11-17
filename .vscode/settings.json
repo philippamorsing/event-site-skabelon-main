@@ -5,7 +5,7 @@
   "git.branchProtection": ["main", "master"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.formatOnSave": true,
   "chat.disableAIFeatures": false,

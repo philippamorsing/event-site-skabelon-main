@@ -9,6 +9,7 @@ html {
   --space-1: 1rem;
   --space-2: 2rem;
   --space-3: 3rem;
+  --section-padding: 100px;
 
   background: var(--color-page);
   color: var(--color-text);
@@ -37,7 +38,6 @@ main {
   grid-template-columns: inherit;
   grid-column: 1 / -1;
   align-content: start;
-  background-color: #8f0500;
 }
 
 main > * {
@@ -173,6 +173,7 @@ main > * {
   }
 }
 
+/* Redigeret / Tilføjet */
 .menu {
   margin: 0;
   padding: var(--space-1);
@@ -208,6 +209,8 @@ main > * {
 .menu-item:hover {
   background: #044529;
   color: white;
+  padding: 5px;
+  border: solid #d4af37;
 }
 
 .site-nav button {
@@ -249,7 +252,8 @@ main > * {
 }
 
 .menu a[aria-current="page"] {
-  border-bottom-color: var(--color-border);
+  border-bottom-color: #d4af37;
+  /* border-bottom-color: var(--color-border); */
 }
 
 /* Flader */
