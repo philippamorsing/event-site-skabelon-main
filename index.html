@@ -4,32 +4,243 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eventnavn</title>
+  <title>Giv Julen Videre</title>
   <link rel="stylesheet" href="./starter.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
+      <a class="site-logo" href="./">Giv Julen Videre</a>
       <nav class="site-nav">
-        <button>Menu</button>
+        <button popovertarget="menu">Menu</button>
         <ul class="menu" id="menu" popover>
-          <li><a href="./" aria-current="page">Forside</a></li>
-          <li><a href="./svg.html">Interaktiv SVG</a></li>
-          <li><a href="./form.html">Formular</a></li>
+          <li><a class="menu-item" href="./" aria-current="page">Forside</a></li>
+          <li><a class="menu-item" href="./svg.html">Interaktiv SVG</a></li>
+          <li><a class="menu-item" href="./form.html">Formular</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main></main>
+  <main>
+    <img class="invi" src="assets/SVG/postkort.svg" alt="Juleinvitation">
+
+    <section class="banner">
+      <div>
+        <h1>40.500+</h1>
+        <p>BØRN I FATTIGDOM</p>
+      </div>
+      <div>
+        <h1>86%</h1>
+        <p>MÅ SPARE PÅ PENGE</p>
+      </div>
+      <div>
+        <h1>25.000+</h1>
+        <p>ANSØGNINGER OM HJÆLP</p>
+      </div>
+      <div>
+        <h1>500 kr.</h1>
+        <p>JULEHJÆLP PR. BARN</p>
+      </div>
+    </section>
+
+    <article class="workshops">
+      <h2>Juleværksteder</h2>
+      <section class="grid_1-1-1-1-1">
+        <div class="container">
+          <div class="img-container">
+            <img src="assets/male_keramik.png" alt="workshop1" />
+            <img class="overlay-image" src="assets/sloejfe.png" alt="Sløjfe" />
+          </div>
+          <div>
+            <h3>MAL LYS & KERAMIK</h3>
+          </div>
+          <button class="btn-keramik" popovertarget="keramik">
+            Læs mere
+          </button>
+        </div>
+
+        <div class="container">
+          <div class="img-container">
+            <img src="assets/klippe, klistre.png" alt="workshop2" />
+            <img class="overlay-image" src="assets/sloejfe.png" alt="Sløjfe" />
+          </div>
+          <div>
+            <h3>KLIPPE/KLISTRE</h3>
+          </div>
+          <button class="btn-klip" popovertarget="klip">
+            Læs mere
+          </button>
+        </div>
+        <div class="container">
+          <div class="img-container">
+            <img src="assets/Linoleumstryk.png" alt="workshop3" /><img class="overlay-image" src="assets/sloejfe.png"
+              alt="Sløjfe" />
+          </div>
+          <div>
+            <h3>LINOLEUMSTRYK</h3>
+          </div>
+          <button class="btn-tryk" popovertarget="tryk">
+            Læs mere
+          </button>
+        </div>
+        <div class="container">
+          <div class="img-container">
+            <img src="assets/smykkeværksted.png" alt="workshop3" /><img class="overlay-image" src="assets/sloejfe.png"
+              alt="Sløjfe" />
+          </div>
+          <div>
+            <h3>SMYKKEVÆRKSTED</h3>
+          </div>
+          <button class="btn-smyk" popovertarget="smyk">
+            Læs mere
+          </button>
+        </div>
+        <div class="container">
+          <div class="img-container">
+            <img class="f5" src="assets/Adventskranslavning.png" alt="workshop4" /><img class="overlay-image"
+              src="assets/sloejfe.png" alt="Sløjfe" />
+          </div>
+          <div>
+            <h3>DEKORATIONER</h3>
+          </div>
+          <button class="btn-dekor" popovertarget="dekor">
+            Læs mere
+          </button>
+        </div>
+      </section>
+
+
+      <div class="keramik" id="keramik" popover>
+        <img src="assets/male_keramik.png" alt="Workshop 1">
+        <div class="workshop-content flow">
+          <h3>Mal lys & keramik</h3>
+          <button class="btn" popovertarget="keramik">
+            Luk
+          </button>
+        </div>
+
+        <div class="klip" id="klip" popover>
+          <img src="assets/klippe, klistre.png" alt="Workshop 2">
+          <div class="workshop-content flow">
+            <h3>Klippe/klistre</h3>
+            <button class="btn" popovertarget="klip">
+              Luk
+            </button>
+          </div>
+
+          <div class="tryk" id="tryk" popover>
+            <img src="assets/Linoleumstryk.png" alt="Workshop 3">
+            <div class="workshop-content flow">
+              <h2>Linoleumstryk</h2>
+              <button class="btn" popovertarget="tryk">
+                Luk
+              </button>
+            </div>
+
+            <div class="smyk" id="smyk" popover>
+              <img src="assets/smykkeværksted.png" alt="Workshop 4">
+              <div class="workshop-content flow">
+                <h3>Smykkeværksted</h3>
+                <button class="btn" popovertarget="smyk">
+                  Luk
+                </button>
+              </div>
+
+              <div class="dekor" id="dekor" popover>
+                <img src="assets/Adventskranslavning.png" alt="Workshop 5">
+                <div class="workshop-content flow">
+                  <h3>Dekorationer</h3>
+                  <button class="btn" popovertarget="dekor">
+                    Luk
+                  </button>
+                </div>
+    </article>
+
+    <article class="Madboder">
+      <h4>Madboder</h4>
+      <div class="mad-container">
+
+        <div class="img-mad-container">
+          <img class="madbod" src="assets/SVG/kakao.svg" alt="Glögg og varm kakao">
+          <h5>Glögg og varm kakao</h5>
+        </div>
+
+        <div class="img-mad-container">
+          <img class="madbod" src="assets/SVG/aeble.svg" alt="Æbleskiver og vafler">
+          <h5>Æbleskiver og vafler</h5>
+        </div>
+
+        <div class="img-mad-container">
+          <img class="madbod" src="assets/SVG/mad.svg" alt="Flæskestegssandwich">
+          <h5>Flæskestegssandwich</h5>
+        </div>
+
+        <div class="img-mad-container">
+          <img class="madbod" src="assets/SVG/ris.svg" alt="Risengrød">
+          <h5>Risengrød</h5>
+        </div>
+      </div>
+    </article>
+
+    <section class="teaser">
+      <p>GIV JULEN VIDERE</p>
+      <h6>Find vej og/eller skab juleglæde</h6>
+
+      <section class="content">
+
+        <div class="image">
+          <img src="assets/SVG/postkort.svg" alt="Tegnet julekort">
+        </div>
+
+        <div class="text-content">
+
+          <span>VEJVISNING + BLIV JULEHJÆLPER</span>
+
+          <h7>Planlæg dagen og tag dit kort med</h7>
+
+          <p>
+            Velkommen til julemarkedets kreative hjerte.
+            På kortet finder du både boder og værksteder,
+            hvor du kan skabe personlige julegaver, dele
+            juleglæden og møde de frivillige, der gør en
+            forskel for andre i juletiden.
+          </p>
+
+          <div class="buttons">
+            <a href="svg.html" class="btn-outline">Se kortet</a>
+            <a href="form.html" class="btn-red">Bliv julehjælper</a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>Giv Julen Videre</p>
+      <p>Kristian, Fiona og Philippa</p>
     </div>
   </footer>
   <script src="./script.js"></script>
